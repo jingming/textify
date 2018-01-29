@@ -7,5 +7,8 @@ venv:
 install: venv
 	. venv/bin/activate; pip install .
 
+serve: venv
+	. venv/bin/activate; python textify/app.py
+
 clean:
 	rm -rf venv
